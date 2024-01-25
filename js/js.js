@@ -2,8 +2,9 @@ var statusMenu= "fechado";
 var iconBurguer = document.getElementById('icon-burguer');
 var iconX = document.getElementById('icon-x');
 var menuMobile = document.getElementById('menu-mobile');
-function menu(){
 
+
+function menu(){
 
     if(statusMenu == "fechado"){
         iconBurguer.style.display="none";
@@ -19,6 +20,18 @@ function menu(){
         statusMenu= "fechado";
     }
 }
+
+function inicio(){
+  window.location.href = 'index.html';
+}
+
+
+
+
+
+
+
+
 
 
 particlesJS("particles-container", {
@@ -93,4 +106,6 @@ particlesJS("particles-container", {
     requestAnimationFrame(update);
   };
   requestAnimationFrame(update);
+
+
 

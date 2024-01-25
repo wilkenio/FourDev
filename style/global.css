@@ -4,6 +4,7 @@
     list-style: none;
     color: white;
     font-family: sans-serif;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -35,4 +36,8 @@ a{
 
 i {
     cursor: pointer;
+}
+
+body{
+    background-color: var(--cor-1);
 }
