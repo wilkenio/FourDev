@@ -8,10 +8,13 @@ nav {
 }
 
 #icon-burguer,#icon-x{
-    font-size: 2.1rem;
+    font-size: 1.6rem;
     display: none;
-    margin: 3%;
+    padding: 2% 2.5%;
+    margin: 5% 5% 3% 3%;
+    border-radius: 50px;
     cursor: pointer;
+    background-color: var(--cor-3);
 }
 
 nav img {
@@ -66,7 +69,7 @@ nav ul a {
         align-items: center;
         height: 100%;
         width: 100%;
-        top: 13vw;
+        top: 15vw;
         font-size: 1.5rem;
         left: -100%;
         transition: 1s;
@@ -74,65 +77,79 @@ nav ul a {
 }
 
 /* capa */
-#capa{
-    background-color: var(--cor-4);
-    background: url('../img/gif2.gif');
-    background-attachment: fixed;
-    background-size: cover;
+#particles-container{
     padding: 2%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-align: center;
-    height: 80vh;
+    width: 96%;
 }
 
-#capa h3{
+#elements{
+    position: absolute;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#particles-container h3{
     color: var(--cor-3);
 }
 
-#capa h1{
+#particles-container h1{
     font-size: 4rem;
     width: 70%;
     line-height: 97%;
+    font-family: INTER3;
 }
 
-#capa h4{
+#particles-container h4{
     width: 36%;
     margin-top: 2%;
+    font-family: INTER2;
 }
 
-#capa a button{
+#particles-container a button{
     border: none;
     outline: none;
     background-color: var(--cor-3);
     padding: 6%;
     cursor: pointer;
-    border-radius:5px;
+    border-radius:50px;
     width: 120%;
     margin-top: 8%;
     transition: 0.6s;
+    box-shadow: 0px 7px 29px -3px rgba(132, 0, 255, 0.575);
+    font-family: INTER1;
+    z-index: 8;
 }
 
-#capa a button:hover{
+#particles-container a button:hover{
     opacity: 0.5;
 }
 @media screen and (max-width: 1050px) {
 
-    #capa{
+    #particles-container{
         height: 50vh;
     }
-    #capa h1{
+    #particles-container h3{
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    #particles-container h1{
         width: 90%;
         font-size: 2.5rem;
+        margin-top: 3%;
     }
 
-    #capa h4{
+    #particles-container h4{
         width: 90%;
+        display: none;
     }
 
-    #capa a button{
+    #particles-container a button{
         margin-left: -10%;
     }
 }
@@ -148,3 +165,13 @@ nav ul a {
     height: 100px;
     background-image: url('../img/inclinacao1.png');
 }
+
+
+
+
+canvas {
+    display: block;
+  }
+  
+
+
