@@ -32,3 +32,7 @@ a{
     font-family: INTER1;
     src: url('fonts/inter/static/Inter-Regular.ttf')
 }
+
+i {
+    cursor: pointer;
+}

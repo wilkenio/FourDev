@@ -1,9 +1,9 @@
 var statusMenu= "fechado";
-
+var iconBurguer = document.getElementById('icon-burguer');
+var iconX = document.getElementById('icon-x');
+var menuMobile = document.getElementById('menu-mobile');
 function menu(){
-    var iconBurguer = document.getElementById('icon-burguer');
-    var iconX = document.getElementById('icon-x');
-    var menuMobile = document.getElementById('menu-mobile');
+
 
     if(statusMenu == "fechado"){
         iconBurguer.style.display="none";
@@ -19,8 +19,6 @@ function menu(){
         statusMenu= "fechado";
     }
 }
-
-
 
 
 particlesJS("particles-container", {
@@ -52,7 +50,7 @@ particlesJS("particles-container", {
       },
       move: {
         enable: true,
-        speed: 6,
+        speed: 5,
         direction: "none",
         random: false,
         straight: false,
@@ -95,3 +93,4 @@ particlesJS("particles-container", {
     requestAnimationFrame(update);
   };
   requestAnimationFrame(update);
+
