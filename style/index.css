@@ -5,6 +5,7 @@ nav {
     justify-content: space-between;
     z-index: 9;
     border-bottom: 1px solid rgba(255, 255, 255, 0.055);
+    font-family: INTER3;
 }
 
 #icon-burguer,#icon-x{
@@ -73,13 +74,16 @@ nav ul a {
         font-size: 1.5rem;
         left: -100%;
         transition: 1s;
+        z-index: 9;
     }
 }
 
 /* capa */
 #particles-container {
     z-index: 0;
-    height: 70vh;
+    height: 85vh;
+    display: flex;
+    align-items: center;
     background-color: var(--cor-4);
 }
 #elements{
@@ -91,20 +95,23 @@ nav ul a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    margin-left: -2.5%;
 }
 #particles-container h3{
     color: var(--cor-3);
 }
 
 #particles-container h1{    
-    font-size: 3rem;
-    width: 70%;
+    font-size: 4rem;
     font-family: INTER3;
+    line-height: 98%;
 }
 
 #particles-container h4{
     width: 50%;
     font-family: INTER2;
+    margin-top: 3%;
 }
 
 #particles-container a button{
@@ -113,19 +120,31 @@ nav ul a {
     background-color: var(--cor-3);
     padding: 6%;
     cursor: pointer;
-    border-radius:50px;
+    border-radius:30px;
     width: 120%;
     margin-top: 8%;
     transition: 0.6s;
-    box-shadow: 0px 7px 29px -3px rgba(132, 0, 255, 0.575);
+    box-shadow: 0px 21px 64px -23px rgba(119, 0, 255, 0.712);
     font-family: INTER1;
+    font-size: 1rem;
+    margin-left: -10%;
+    display: flex;
+    align-items: center;
+    column-gap: 5%;
 }
 
 #particles-container a button:hover{
     opacity: 0.5;
-    color: aquamarine;
+}
+
+#particles-container a button i{
+    font-size: 2rem;
 }
 @media screen and (max-width: 1050px) {
+    #elements{
+        width: 100%;
+        margin-left: -20%;
+    }
 
     #particles-container{
         height: 50vh;
