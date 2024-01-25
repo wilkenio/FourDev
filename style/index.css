@@ -8,7 +8,8 @@ nav {
     font-family: INTER3;
 }
 
-#icon-burguer,#icon-x{
+#icon-burguer,
+#icon-x {
     font-size: 1.6rem;
     display: none;
     padding: 2% 2.5%;
@@ -18,19 +19,41 @@ nav {
     background-color: var(--cor-3);
 }
 
-
-#img-menu{
-    background-image: url('../img/logo.png');
+#img-menu {
     background-size: cover;
-    padding: 2.5% 1.8%;
+    padding: 2% 1.5%;
     transition: 1s;
     margin-left: 2%;
     cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
+#img-menu img {
+    width: 2.5rem;
+    height: 3.5rem;
+    transition: 0.5s;
+}
 
-#img-menu:hover{
-     padding: 2.5% 6.3%; 
+#img-menu img:hover {
+    transition: 0.5s;
+}
+
+#img-menu p {
+    animation-name: slidein;
+    animation-duration: 2s;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
 }
 
 nav ul {
@@ -52,8 +75,8 @@ nav ul a {
     padding: 2%;
     border-bottom: 3px solid transparent;
     transition: 0.3s;
-    transition: border-bottom-width 1s ease-in-out; 
-    font-family:INTER1;
+    transition: border-bottom-width 1s ease-in-out;
+    font-family: INTER1;
 }
 
 .itens-menu:hover {
@@ -61,17 +84,18 @@ nav ul a {
 }
 
 @media screen and (max-width: 1050px) {
-    #icon-burguer{
+    #icon-burguer {
         display: block;
     }
+
     nav {
         align-items: center;
-        border-bottom:none;
+        border-bottom: none;
     }
 
     #img-menu {
         padding: 7%;
-        width:22%;
+        width: 22%;
     }
 
     nav ul {
@@ -88,7 +112,8 @@ nav ul a {
         transition: 1s;
         z-index: 9;
     }
-    #img-menu:hover{
+
+    #img-menu:hover {
         padding: 7%;
     }
 }
@@ -101,7 +126,8 @@ nav ul a {
     align-items: center;
     background-color: var(--cor-1);
 }
-#elements{
+
+#elements {
     display: flex;
     position: absolute;
     z-index: 1;
@@ -113,29 +139,30 @@ nav ul a {
     margin-left: -0.8%;
     width: 100%;
 }
-#particles-container h3{
+
+#particles-container h3 {
     color: var(--cor-3);
 }
 
-#particles-container h1{    
+#particles-container h1 {
     font-size: 4rem;
     font-family: INTER3;
     line-height: 98%;
 }
 
-#particles-container h4{
+#particles-container h4 {
     width: 50%;
     font-family: INTER2;
     margin-top: 2%;
 }
 
-#particles-container a button{
+#particles-container a button {
     border: none;
     outline: none;
     background-color: var(--cor-3);
     padding: 10%;
     cursor: pointer;
-    border-radius:20px;
+    border-radius: 20px;
     width: 166%;
     margin-top: 8%;
     transition: 0.6s;
@@ -150,35 +177,37 @@ nav ul a {
     border: 2px solid transparent;
 }
 
-#particles-container a button:hover{
+#particles-container a button:hover {
     border: 2px solid var(--cor-3);
-    background-color:var(--cor-1);
+    background-color: var(--cor-1);
     transform: scale(1.1);
 }
 
-#particles-container a button i{
+#particles-container a button i {
     font-size: 2rem;
 }
+
 @media screen and (max-width: 1050px) {
-    #elements{
+    #elements {
         width: 100%;
     }
 
-    #particles-container{
+    #particles-container {
         height: 50vh;
     }
-    #particles-container h3{
+
+    #particles-container h3 {
         width: 90%;
         font-size: 1rem;
     }
 
-    #particles-container h1{
+    #particles-container h1 {
         width: 90%;
         font-size: 2.5rem;
         margin-top: 3%;
     }
 
-    #particles-container h4{
+    #particles-container h4 {
         width: 90%;
         display: none;
     }
@@ -186,13 +215,13 @@ nav ul a {
 }
 
 /* serviços */
-#servicos{
+#servicos {
     width: 100%;
 
 }
 
 
-#sub-servicos{
+#sub-servicos {
     width: 100%;
     height: 100px;
     background-color: var(--cor-4);
@@ -202,7 +231,7 @@ nav ul a {
     align-items: center;
 }
 
-#sub-servicos h4{
+#sub-servicos h4 {
     font-family: INTER1;
     color: var(--cor-3);
     text-align: center;
@@ -211,7 +240,7 @@ nav ul a {
     align-items: center;
 }
 
-#sub-servicos h4 span{
+#sub-servicos h4 span {
     padding: 0.1px 2px 0.1px 5px;
     background-color: var(--cor-3);
     border-radius: 50px;
@@ -219,24 +248,26 @@ nav ul a {
 
 }
 
-#sub-servicos h1{
+#sub-servicos h1 {
     font-family: INTER3;
     width: 40%;
     text-align: center;
 }
+
 canvas {
     display: block;
-  }
-  @media screen and (max-width: 1050px) {
-    #sub-servicos h1{
+}
+
+@media screen and (max-width: 1050px) {
+    #sub-servicos h1 {
         width: 70%;
         font-size: 1rem;
     }
-  }
+}
 
 
-  /* rodape */
-  footer {
+/* rodape */
+footer {
     padding: 2rem;
     background-color: var(--cor-1);
 }
@@ -247,7 +278,7 @@ canvas {
     border-bottom: 1px solid rgb(114, 111, 111);
 }
 
-#links-footer{
+#links-footer {
     padding-bottom: 1rem;
 }
 
@@ -263,7 +294,7 @@ canvas {
     margin-top: 1rem;
 }
 
-#menu-mobile{
+#menu-mobile {
     display: flex;
     flex-wrap: wrap;
 }
@@ -291,21 +322,21 @@ canvas {
     column-gap: 1rem;
 }
 
-#icons-footer a i{
+#icons-footer a i {
     transform: 0.6s;
 }
 
-#icons-footer a i:hover{
+#icons-footer a i:hover {
     color: var(--cor-3);
 }
 
-#copywrite h6{
+#copywrite h6 {
     font-family: sans-serif;
     font-size: 0.8rem;
 }
+
 @media screen and (max-width: 1050px) {
     #copywrite img {
         width: 40%;
     }
 }
-
