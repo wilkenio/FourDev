@@ -163,11 +163,7 @@ nav ul a {
 #sub-servicos{
     width: 100%;
     height: 100px;
-    background-image: url('../img/inclinacao1.png');
 }
-
-
-
 
 canvas {
     display: block;
