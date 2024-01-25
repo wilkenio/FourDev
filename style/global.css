@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    color: white;
+    font-family: sans-serif;
+}
+
+:root {
+    --cor-1: #10151B;
+    --cor-2: #ffff;
+    --cor-3: #821ED0;
+    --cor-4: #121922;
+}
+
+a{
+    text-decoration: none;
+    color: var(--cor-3);
+}
