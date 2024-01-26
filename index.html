@@ -8,35 +8,36 @@
     <link rel="stylesheet" href="style/index.css">
     <title>FourDevs</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
     <nav>
         <div id="img-menu">
-            <img  id="logo-img"  src="../img/logo.png" alt="Logo FourDevs">
+            <img  id="logo-img"  src="img/logo.png" alt="Logo FourDevs">
             <p id="logo-name">FourDevs</p>
         </div>
         <!-- <img src="img/logo.png"> -->
         <i onclick="menu()" id="icon-burguer" class="fa-solid fa-bars"></i>
         <i onclick="menu()" id="icon-x" class="fa-solid fa-x"></i>
         <ul id="menu-mobile">
-            <a href="#">
+            <a href="#img-menu">
                 <li class="itens-menu">Home</li>
             </a>
-            <a href="#">
+            <a href="#sobre">
                 <li class="itens-menu">Empresa</li>
             </a>
-            <a href="#">
+            <a href="#servicos">
                 <li class="itens-menu">Serviços</li>
             </a>
-            <a href="#">
+            <a href="#sections-footer">
                 <li class="itens-menu">Contatos</li>
             </a>
         </ul>
     </nav>
 
     <div id="particles-container">
-        <div id="elements" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+        <div id="elements" data-aos="zoom-in-down" data-aos-duration="1000">
             <h3>Soluções Digitais para Empresas</h3>
             <h1>Eleve seu negócio <br> para outro patamar</h1>
             <h4>Transforme ideias em realidade digital, onde a tecnologia encontra a inovação para moldar o futuro do
@@ -46,9 +47,54 @@
     </div>
 
     <section id="servicos">
+        <h4><span></span>Serviços <span></span></h4>
+        <h1>Excelência em Soluções Digitais Personalizadas para sua Empresa</h1>
         <div id="sub-servicos">
+           
+
+            <div class="card" >
+                <img src="img/foguete.png" alt="">
+                <h2>Criação de Sites</h2>
+                <h6>Transformamos suas ideias em experiências digitais excepcionais. Desde websites responsivos até aplicativos web e 
+                    sistemas inovadores, criamos soluções adaptadas às suas necessidades.</h6>
+            </div>
+            
+            <div class="card">
+                <img src="img/sitesinstituicional.png" alt="">
+                <h2>Sites Institucionais</h2>
+                <h6>Criamos espaços digitais que destacam sua marca de maneira única. Do design à funcionalidade, 
+                    moldamos uma presença online impactante para sua empresa prosperar.</h6>
+            </div>
+            
+            <div class="card">
+                <img src="img/e-commerce.png" alt="">
+                <h2>E-commerce</h2>
+                <h6>Potencialize suas vendas online com uma plataforma de e-commerce personalizada. 
+                    Criamos soluções integradas para impulsionar sua presença digital no mundo do comércio online.</h6>
+            </div>
+            <div class="card">
+                <img src="img/alvo.png" alt="">
+                <h2>Design UX / UI</h2>
+                <h6>Destaque-se com uma experiência do usuário excepcional. Otimizamos a usabilidade do seu site, 
+                    garantindo que cada interação seja intuitiva e agradável.</h6>
+            </div>
+            <div class="card">
+                <img src="img/seo.png" alt="">
+                <h2>SEO</h2>
+                <h6>Nossos serviços de criação de sites são focados em SEO, assegurando não apenas uma presença digital impactante, 
+                    mas também os melhores resultados nos motores de busca.</h6>
+            </div>
+    </section>
+
+    <section id="sobre">
+        <div id="empresa-img"><img src="img/sobre.png" alt=""></div>
+        <div id="empresa-text">
             <h4><span></span>Serviços <span></span></h4>
-            <h1>Excelência em Desenvolvimento Web & Marketing Digital</h1>
+            <h1>Um pouco sobre nós</h1>
+            <h5>Na FourDevs, somos mais do que uma equipe de desenvolvimento  — somos contadores de histórias digitais.
+                 Unimos paixão e expertise para transformar conceitos em experiências notáveis. Nossa equipe diversificada, composta por especialistas em tecnologia, design e estratégia digital, está comprometida em criar soluções personalizadas que impulsionam o sucesso do seu negócio. Desde a concepção até a implementação, nossa busca pela excelência resulta em qualidade impecável em cada projeto. 
+                Junte-se a nós nessa jornada digital e transforme sua presença online conosco.</h5>
+        </div>
     </section>
 
     <footer>
@@ -58,13 +104,13 @@
                     <a href="#">
                         <li class="itens-menu">Home</li>
                     </a>
-                    <a href="#">
+                    <a href="#sobre">
                         <li class="itens-menu">Empresa</li>
                     </a>
-                    <a href="#">
+                    <a href="#servicos">
                         <li class="itens-menu">Serviços</li>
                     </a>
-                    <a href="#">
+                    <a href="#sections-footer">
                         <li class="itens-menu">Contatos</li>
                     </a>
                 </ul>
@@ -85,6 +131,7 @@
             <a href="#particles-container"><i class="fa-solid fa-circle-up"></i></a>
         </div>
     </footer>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 

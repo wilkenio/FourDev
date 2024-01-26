@@ -35,6 +35,8 @@ function inicio() {
   window.location.href = 'index.html';
 }
 
+AOS.init();
+
 particlesJS("particles-container", {
   particles: {
     number: { value: 150, density: { enable: true, value_area: 800 } },
@@ -64,7 +66,7 @@ particlesJS("particles-container", {
     },
     move: {
       enable: true,
-      speed: 5,
+      speed: 3,
       direction: "none",
       random: false,
       straight: false,

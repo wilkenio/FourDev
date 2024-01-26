@@ -12,6 +12,7 @@
     --cor-2: #ffff;
     --cor-3: #821ED0;
     --cor-4: #121922;
+    --cor-5:#111C29;
 }
 
 a{
@@ -40,4 +41,25 @@ i {
 
 body{
     background-color: var(--cor-1);
+}
+
+
+/* Para navegadores WebKit (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 5px; /* Largura da barra de rolagem */
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--cor-3); /* Cor do "ponteiro" da barra de rolagem */
+}
+
+/* Para o Firefox */
+::-moz-scrollbar {
+    width: 5px; /* Largura da barra de rolagem */
+    border-radius: 50px;
+}
+
+::-moz-scrollbar-thumb {
+    background-color: var(--cor-3); /* Cor do "ponteiro" da barra de rolagem */
 }
