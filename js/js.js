@@ -7,11 +7,11 @@ let logoName = document.getElementById('logo-name');
 
 
 imgMenu.addEventListener("mouseenter", ()=>{
-  logoName.style.display = "block";
+  logoName.style.width = "7%";
 })
 
 imgMenu.addEventListener("mouseout", ()=>{
-  logoName.style.display = "none";
+  logoName.style.width = "0%";
 })
 
 function menu() {

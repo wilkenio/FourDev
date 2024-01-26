@@ -39,13 +39,18 @@ nav {
     transition: 0.5s;
 }
 
-#img-menu p {
-    animation-name: slidein;
-    animation-duration: 2s;
-    display: none;
+#logo-name {
     font-family: INTER1;
     font-style: italic;
+    position: absolute;
+    top: 7%;
+    left: 6.5%;
+    width: 0%;
+    overflow: hidden;
+    transition: 1s;
 }
+
+
 
 @keyframes slidein {
     from {
@@ -116,6 +121,11 @@ nav ul a {
 
     #img-menu:hover {
         padding: 7%;
+    }
+    #logo-name {
+        width: 18%;
+        left: 20%;
+        top:6% ;
     }
 }
 
@@ -212,6 +222,10 @@ nav ul a {
         width: 90%;
         display: none;
     }
+    #particles-container a button {
+        margin-top:15% ;
+        padding: 6%;
+    }
 
 }
 
@@ -277,7 +291,8 @@ canvas {
 }
 
 .card:hover{
-    /* border-left: 10px solid var(--cor-3); */
+    transform: scale(1.01);
+    box-shadow: 5px 10px 37px -13px rgba(162, 0, 255, 0.521);
 }
 
 .card h2{
@@ -310,12 +325,14 @@ canvas {
 
     #servicos h1{
         width: 90%;
+        margin-bottom: 15%;
     }
 }
 
 #sobre{
     display: flex;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    margin-top: 15%;
 }
 #empresa-img {
     width: 43%;
