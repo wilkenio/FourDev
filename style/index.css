@@ -33,6 +33,7 @@ nav {
     width: 2.5rem;
     height: 3.5rem;
     transition: 0.5s;
+    z-index: 99 !important;
 }
 
 #img-menu img:hover {
@@ -123,7 +124,7 @@ nav ul a {
         padding: 7%;
     }
     #logo-name {
-        width: 18%;
+        width: 22%;
         left: 20%;
         top:6% ;
     }
@@ -454,5 +455,18 @@ footer {
 @media screen and (max-width: 1050px) {
     #copywrite img {
         width: 40%;
+    }
+    #menu-mobile{
+        margin-top: -6%;
+    }
+    nav{
+        position: fixed;
+        width: 100%;
+    }
+    #icon-burguer, #icon-x{
+        z-index: 99 !important;
+    }
+    #logo-name{
+        margin-top: 9vw;
     }
 }
